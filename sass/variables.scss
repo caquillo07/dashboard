@@ -1,0 +1,19 @@
+/**
+    Global variables
+**/
+
+// Globals
+$colors: (
+    'brand': rgb(64, 204, 168),
+    'background': rgb(245, 245, 245),
+    'submit-button': rgb(176, 181, 190)
+);
+
+// Side Navigation Bar
+$side-nav-width: 250px;
+
+// Top Navigation Bar
+$top-nav-height: $side-nav-width / 3;
+$brand-font-size: 32px;
+$search-box-width: 45%; // use to be 150px
+$search-button-height: 42px;
