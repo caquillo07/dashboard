@@ -66,6 +66,13 @@ header .topnav {
   display: block;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
+header .topnav a {
+  text-decoration: none;
+  color: black;
+}
+header .topnav a.user-name {
+  font-weight: 700;
+}
 header .topnav a.brand {
   float: left;
   text-decoration: none;
@@ -95,6 +102,7 @@ header .topnav i.fa-chevron-down {
   position: relative;
   right: 32px;
   font-size: 13px;
+  color: #bdc2ca;
 }
 header .topnav i.fa-search {
   font-size: 22px;
@@ -102,7 +110,7 @@ header .topnav i.fa-search {
 }
 header .topnav button.search-button {
   margin-left: -26px;
-  background: #b0b5be;
+  background: #bdc2ca;
   color: white;
   padding: 0;
   height: 42px;
@@ -112,8 +120,15 @@ header .topnav button.search-button {
   top: 3px;
   border-radius: 0 4px 4px 0;
 }
-header .topnav a:hover {
-  background-color: #ddd;
+header .fa-user-o, header .fa-calendar, header .fa-list-ul {
+  font-size: 24px;
+  line-height: 42px;
+  color: #8a8a8a;
+  margin: 0 10px;
+  position: relative;
+  top: 3px;
+}
+header .fa-user-o:hover, header .fa-calendar:hover, header .fa-list-ul:hover {
   color: black;
 }
 header .profile-img {
