@@ -39,6 +39,7 @@
 #main {
     transition: margin-left .5s;
     padding: 16px;
+    z-index: -1;
 }
 
 @media screen and (max-height: 450px) {
