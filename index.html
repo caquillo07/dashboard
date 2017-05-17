@@ -33,11 +33,25 @@
         </header>
 
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="side-nav-label">MAIN</span>&times;</a>
+            <a href="#"><i class="fa fa-th-large" aria-hidden="true"></i> Dashboard</a>
+            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Calls</a>
+            <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Quotes</a>
+            <a href="#"><i class="fa fa-users" aria-hidden="true"></i> Leads</a>
+            <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Accounts</a>
+            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Jobs</a>
+            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a>
+            <a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Invoices</a>
+            <a href="#"><i class="fa fa-files-o" aria-hidden="true"></i> Cases</a>
+            <a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i> Reports</a>
+            <span style="font-size: 10px;" class="side-nav-label">MORE</span>
+            <p>more</p>
+            <a href="#"><i class="fa fa-book" aria-hidden="true"></i> Library</a>
+            <a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i> Directory</a>
+            <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Help</a>
+            <a href="#"><i class="fa fa-building-o" aria-hidden="true"></i> Franchise</a>
+            <a href="#"><i class="fa fa-flag-o" aria-hidden="true"></i> Corporate</a>
+            <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Setup</a>
         </div>
 
         <div id="main">
@@ -45,19 +59,6 @@
             <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
         </div>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";
-            }
-        </script>
-
         <!-- App -->
         <script src="js/app.js"></script>
     </body>
