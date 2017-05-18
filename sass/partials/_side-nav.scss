@@ -12,37 +12,74 @@
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-}
+    padding-top: 15px;
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
+    a {
+        padding: 8px 8px 8px 28px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
 
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
+        &:hover, &.selected {
+            color: #fff;
+            background-color: rgb(103, 108, 125);
+        }
+        &:active {
+            background-color: rgb(83, 88, 85);
+        }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+        i.fa {
+            font-size: 25px;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+    }
 
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-    z-index: -1;
+    a.closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        height: 46px;
+        width: 30px;
+        line-height: 46px;
+        background-color: rgb(73, 76, 87);
+        & i.fa {
+            position: relative;
+            font-size: 13px;
+            left: 2px;
+            margin: 0;
+            color: white;
+        }
+        &:hover {
+            @extend a:hover;
+        }
+    }
+
+    .side-nav-label {
+        color: #818181;
+        text-transform: uppercase;
+        font-size: 11px;
+        left: 28px;
+        position: relative;
+        margin-bottom: 5px;
+        width: 100px; // prevent it from convering the close button
+    }
+
+    hr {
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 0;
+    }
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+//   .sidenav a {font-size: 18px;}
 }
