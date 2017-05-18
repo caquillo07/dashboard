@@ -33,7 +33,7 @@
         </header>
 
         <div id="sidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeLeftNav()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a> 
             <p class="side-nav-label">main</p>
             <hr>
             <a class="selected" href="#"><i class="fa fa-th-large" aria-hidden="true"></i> Dashboard</a>
@@ -58,10 +58,67 @@
             <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Setup</a>
         </div>
 
+        <div id="rightnav" class="rightnav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeRightNav()"><i class="fa fa-chevron-right" aria-hidden="true"></i></a> 
+            <p class="side-nav-label following-label">following (13)</p>
+            <hr>
+            <div class="following">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+            </div>
+            <p class="side-nav-label followers-label">followers (98)</p>
+            <hr>
+            <div class="followers">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+                <img src="https://placeimg.com/40/40/people">
+            </div>
+
+            <!-- Recent Items -->
+            <p class="side-nav-label recent-items-label">recent items</p>
+            <hr>
+            <a href="#"><i class="fa fa-files-o" aria-hidden="true"></i> <span>Work Order, ID:823-1</span></a>
+            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Mike Miller</span></a>
+
+            <!-- Links -->
+            <p class="side-nav-label links-label">links</p>
+            <hr>
+            <div class="external-links">
+                <a href="#">Corporate website</a>
+                <a href="#">Google Analytics</a>
+                <a href="#">Coporate Google Docs</a>
+                <a href="#">Book Online</a>
+                <a href="#">Quote Functionality Update</a>
+                <a href="#">Help Manuals</a>
+                <a href="#">Mobile Video Game Theater Homepage</a>
+            </div>
+            
+
+            <!-- Discussion Groups-->
+            <p class="side-nav-label discussion-label">discussion groups</p>
+            <hr>
+            <div class="external-links">
+                <a href="#">Marketing Strategy</a>
+                <a href="#">B2B</a>
+                <a href="#">Operational Standards</a>
+                <a href="#">How to Discussion Group</a>
+            </div>
+        </div>
+
         <div id="main">
             <h2>Sidenav Push Example</h2>
             <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            <span style="font-size:30px;cursor:pointer" onclick="openLeftNav()">&#9776; open left</span>
+            <span style="font-size:30px;cursor:pointer" onclick="openRightNav()">&#9776; open right</span>
         </div>
         <!-- App -->
         <script src="js/app.js"></script>

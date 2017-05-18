@@ -1,9 +1,9 @@
 /**
     Side Nav Bar
 **/
-
+/** Left side Nav **/
 .sidenav {
-    height: 90%;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -77,9 +77,135 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         margin: 0;
     }
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        //   .sidenav a {font-size: 18px;}
+    }
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-//   .sidenav a {font-size: 18px;}
+/** Right side Nav **/
+
+.rightnav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    background-color: rgb(236, 236, 236);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+
+    a {
+        padding: 8px 8px 0px 28px;
+        text-decoration: none;
+        font-size: 13px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+        // &:hover, &.selected {
+        //     color: #fff;
+        //     background-color: rgb(103, 108, 125);
+        // }
+        // &:active {
+        //     background-color: rgb(83, 88, 85);
+        // }
+
+        i.fa {
+            font-size: 22px;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        span {
+            text-align: center;
+            position: relative;
+            bottom: 6px;
+        }
+    }
+
+    a.closebtn {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        height: 46px;
+        width: 30px;
+        line-height: 46px;
+        background-color: rgb(220, 220, 220);
+        & i.fa {
+            position: relative;
+            font-size: 13px;
+            left: 2px;
+            margin: 0;
+            color: rgb(95, 96, 97);
+        }
+        &:hover {
+            color: #fff;
+            background-color: rgb(103, 108, 125);
+        }
+    }
+
+    .side-nav-label {
+        color: #818181;
+        text-transform: uppercase;
+        font-size: 11px;
+        left: 28px;
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    .following-label {
+        margin-top: 60px;
+    }
+
+    .followers-label {
+        margin-top: 20px;
+    }
+
+    .recent-items-label {
+        margin-top: 28px;
+    }
+
+    .links-label {
+        margin-top: 13px;
+        & + hr {
+            margin-bottom: 0;
+        }
+    }
+
+    .external-links a {
+        padding-top: 6px;
+    }
+
+    .discussion-label {
+        margin-top: 25px;
+    }
+
+    hr {
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        // margin: 0;
+        width: 85%;
+    }
+
+    .following, .followers {
+        // display: flex;
+        width: 85%;
+        margin: 0 auto;
+        img {
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        //   .sidenav a {font-size: 18px;}
+    }
 }
+
+
