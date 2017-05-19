@@ -2,7 +2,7 @@
     Cards Styles
 **/
 
-.cards {
+#cards {
     display: flex;
     flex-direction: row;
     margin: auto 0;
@@ -41,7 +41,6 @@
                         left: 0px;
                     }
                     .timeago {
-                        text-transform: initial;
                         font-size: 0.6em;
                         color: #cbcfd5;
                         margin: 0;
