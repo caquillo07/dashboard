@@ -69,7 +69,7 @@ header {
         }
 
         button.search-button {
-            margin-left: -26px;
+            margin: 0 25em 0 -26px;
             background: #bdc2ca;
             color: white;
             padding: 0;
@@ -82,11 +82,18 @@ header {
         }
     }
 
+    .shortcuts {
+        width: 212px;
+        margin-bottom: 33px;
+        display: inline-block;
+
+    }
+
     .fa-user-o, .fa-calendar, .fa-list-ul {
         font-size: 24px;
         line-height: $search-button-height;
         color: #8a8a8a;
-        margin: 0 10px;
+        margin: 0 20px;
         position: relative;
         top: 3px;
         &:hover {
@@ -98,7 +105,7 @@ header {
         position: absolute;
         border-radius: 50%;
         margin: 10px;
-        top: 2px;
+        top: -2px;
     }
 }
 

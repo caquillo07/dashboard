@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <title>Vonigo</title>
-        <!--<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <script src="https://use.fontawesome.com/1a144c2a39.js"></script>
     </head>
@@ -24,9 +24,11 @@
                         <a href="#">Event</a>
                     </div>
                 </div>
-                <a href="#calendar"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                <a href="#friends"><i class="fa fa-user-o" aria-hidden="true"></i></a>
-                <a href="#tasks"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                <div class="shortcuts">
+                    <a href="#calendar"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                    <a href="#friends"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                    <a href="#tasks"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                </div>
                 <a class="user-name" href="#tasks">Stephanie</a>
                 <img class="profile-img" src="https://placeimg.com/60/60/people" alt="Stephanie">
             </div>
@@ -114,11 +116,102 @@
             </div>
         </div>
 
+        <!-- TEMP FOR DEBUGGING -->
+        <span style="margin-left: 500px;font-size:30px;cursor:pointer" onclick="openLeftNav()">&#9776; open left</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openRightNav()">&#9776; open right</span>
+        <!-- END OF DEBUGGING TEMP -->
+
         <div id="main">
-            <h2>Sidenav Push Example</h2>
-            <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-            <span style="font-size:30px;cursor:pointer" onclick="openLeftNav()">&#9776; open left</span>
-            <span style="font-size:30px;cursor:pointer" onclick="openRightNav()">&#9776; open right</span>
+            <h1>Dashboard</h1>
+
+            <!-- Cards -->
+            <div class="cards">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="meta-data">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <div class="info">
+                                <h5 class="title">new clients</h5>
+                                <p class="timeago">Last 7 days</p>    
+                            </div>
+                        </div>
+                        <p class="number">25</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="meta-data">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <div class="info">
+                                <h5 class="title">new work orders</h5>
+                                <p class="timeago">Last 24 hours</p>    
+                            </div>
+                        </div>
+                        <p class="number">13</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="meta-data">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>
+                            <div class="info">
+                                <h5 class="title">new quotes</h5>
+                                <p class="timeago">Last month</p>    
+                            </div>
+                        </div>
+                        <p class="number">249</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="meta-data">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            <div class="info">
+                                <h5 class="title">new invoices</h5>
+                                <p class="timeago">today</p>    
+                            </div>
+                        </div>
+                        <p class="number">68</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="meta-data">
+                            <i class="fa fa-th" aria-hidden="true"></i>
+                            <div class="info">
+                                <h5 class="title">open cases</h5>
+                                <p class="timeago">since launch</p>    
+                            </div>
+                        </div>
+                        <p class="number">1898</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="social">
+                <div class="message-board">
+
+
+                </div>
+                <div class="your-network">
+
+                </div>
+            </div>
+
+            <!-- Posts -->
+
+
         </div>
         <!-- App -->
         <script src="js/app.js"></script>

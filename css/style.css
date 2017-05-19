@@ -236,7 +236,7 @@ header .topnav i.fa-search {
   line-height: 42px;
 }
 header .topnav button.search-button {
-  margin-left: -26px;
+  margin: 0 25em 0 -26px;
   background: #bdc2ca;
   color: white;
   padding: 0;
@@ -247,11 +247,16 @@ header .topnav button.search-button {
   top: 3px;
   border-radius: 0 4px 4px 0;
 }
+header .shortcuts {
+  width: 212px;
+  margin-bottom: 33px;
+  display: inline-block;
+}
 header .fa-user-o, header .fa-calendar, header .fa-list-ul {
   font-size: 24px;
   line-height: 42px;
   color: #8a8a8a;
-  margin: 0 10px;
+  margin: 0 20px;
   position: relative;
   top: 3px;
 }
@@ -262,7 +267,7 @@ header .profile-img {
   position: absolute;
   border-radius: 50%;
   margin: 10px;
-  top: 2px;
+  top: -2px;
 }
 
 /** 
@@ -316,6 +321,64 @@ header .profile-img {
   background-color: #f1f1f1;
 }
 
+/**
+    Cards Styles
+**/
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+}
+.cards .card {
+  width: 25%;
+  height: 200px;
+  background: white;
+  margin: 0 1px;
+  text-align: center;
+}
+.cards .card .card-content {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cards .card .card-content .meta-data {
+  display: flex;
+}
+.cards .card .card-content .meta-data i.fa {
+  vertical-align: middle;
+  text-align: center;
+  border: 0.5px solid rgba(0, 0, 0, 0.12);
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+}
+.cards .card .card-content .meta-data .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.cards .card .card-content .meta-data .info .title {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  margin: 0;
+  position: relative;
+  left: 0px;
+}
+.cards .card .card-content .meta-data .info .timeago {
+  text-transform: initial;
+  font-size: 0.6em;
+  color: #cbcfd5;
+  margin: 0;
+  text-align: left;
+}
+.cards .card .card-content .number {
+  font-size: 60px;
+  font-weight: lighter;
+  margin: 0;
+  text-align: left;
+}
+
 /** 
     Main Style File
  **/
@@ -326,11 +389,14 @@ body {
 
 #main {
   transition: margin-left .5s;
-  padding: 16px;
   background-color: #f7f7f7;
-  height: 100%;
   display: flex;
   flex-direction: column;
+}
+#main h1 {
+  font-size: 27px;
+  font-weight: 300;
+  margin: 36px 0 1em 2.2em;
 }
 
 /*# sourceMappingURL=style.css.map */

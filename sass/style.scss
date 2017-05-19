@@ -1,6 +1,7 @@
 @import 'partials/side-nav';
 @import 'partials/top-nav';
 @import 'partials/drop-down-button';
+@import 'partials/cards';
 
 
 /** 
@@ -11,11 +12,17 @@ body {
     margin: 0;
 }
 
+
+
 #main {
     transition: margin-left .5s;
-    padding: 16px;
     background-color: rgb(247, 247, 247);
-    height: 100%; // cover entire screen
     display: flex;
     flex-direction: column;
+
+    h1 {
+        font-size: 27px;
+        font-weight: 300;
+        margin: 36px 0 1em 2.2em;
+    }
 }
