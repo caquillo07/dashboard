@@ -30,6 +30,7 @@
                         .name {
                             font-size: 14px;
                             margin-bottom: 4px;
+                            color: black;
                             font-weight: 400;
                         }
                         .timeago {
@@ -56,6 +57,55 @@
                 background: rgb(247, 247, 247);
                 .more-comments {
                     color: #000;
+                    display: block;
+                    font-size: 13px;
+                    text-decoration: none;
+                    margin: 12px 20px;
+                    & + hr {
+                        border: 0;
+                        height: 0;
+                        border-bottom: 1px solid rgba(255, 255, 255, 1);
+                        margin-bottom: 0;
+                    }
+                }
+                .comment {
+                    .user {
+                        display: flex;
+                        img {
+                            border-radius: 50%;
+                            margin: 15px 0 0 15px;
+                            width: 40px;
+                            height: 40px;
+                        }   
+                        .user-info {
+                            display: block;
+                            margin-left: 15px;
+
+                            .name {
+                                font-size: 14px;
+                                margin-bottom: 12px;
+                                margin-top: 14px;
+                                font-weight: 400;
+                                color: black;
+                            }
+                            .comment-body {
+                                font-size: 13px;
+                                margin: 0;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+                .comment-input { 
+                    width: 100%;
+                    border: 1px solid rgba(0, 0, 0, 0.5);
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    background: #fff;
+                    background-position: 10px 10px;
+                    background-repeat: no-repeat;
+                    padding: 5px 0px 5px 8px;
                 }
             }
         }

@@ -412,6 +412,7 @@ header .profile-img {
 #social #message-board .message .content .user .user-info .name, #social #your-network .message .content .user .user-info .name {
   font-size: 14px;
   margin-bottom: 4px;
+  color: black;
   font-weight: 400;
 }
 #social #message-board .message .content .user .user-info .timeago, #social #your-network .message .content .user .user-info .timeago {
@@ -435,6 +436,52 @@ header .profile-img {
 }
 #social #message-board .message .comments-section .more-comments, #social #your-network .message .comments-section .more-comments {
   color: #000;
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 12px 20px;
+}
+#social #message-board .message .comments-section .more-comments + hr, #social #your-network .message .comments-section .more-comments + hr {
+  border: 0;
+  height: 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 0;
+}
+#social #message-board .message .comments-section .comment .user, #social #your-network .message .comments-section .comment .user {
+  display: flex;
+}
+#social #message-board .message .comments-section .comment .user img, #social #your-network .message .comments-section .comment .user img {
+  border-radius: 50%;
+  margin: 15px 0 0 15px;
+  width: 40px;
+  height: 40px;
+}
+#social #message-board .message .comments-section .comment .user .user-info, #social #your-network .message .comments-section .comment .user .user-info {
+  display: block;
+  margin-left: 15px;
+}
+#social #message-board .message .comments-section .comment .user .user-info .name, #social #your-network .message .comments-section .comment .user .user-info .name {
+  font-size: 14px;
+  margin-bottom: 12px;
+  margin-top: 14px;
+  font-weight: 400;
+  color: black;
+}
+#social #message-board .message .comments-section .comment .user .user-info .comment-body, #social #your-network .message .comments-section .comment .user .user-info .comment-body {
+  font-size: 13px;
+  margin: 0;
+  font-weight: 300;
+}
+#social #message-board .message .comments-section .comment-input, #social #your-network .message .comments-section .comment-input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #fff;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 5px 0px 5px 8px;
 }
 #social #your-network {
   margin: 0;
