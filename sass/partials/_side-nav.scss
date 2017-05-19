@@ -4,7 +4,8 @@
 /** Left side Nav **/
 .sidenav {
     height: 100%;
-    width: 0;
+    // For it to appear open when app loads, other set to 0
+    width: 230px;
     position: fixed;
     z-index: 1;
     // top: 10%;
@@ -87,7 +88,8 @@
 
 .rightnav {
     height: 100%;
-    width: 0;
+    // For it to appear open when app loads, other set to 0
+    width: 365px;
     position: fixed;
     z-index: 1;
     right: 0;

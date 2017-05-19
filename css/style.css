@@ -4,7 +4,7 @@
 /** Left side Nav **/
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 230px;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -77,7 +77,7 @@
 /** Right side Nav **/
 .rightnav {
   height: 100%;
-  width: 0;
+  width: 365px;
   position: fixed;
   z-index: 1;
   right: 0;
@@ -397,6 +397,7 @@ header .profile-img {
 }
 #social #message-board .message .content, #social #your-network .message .content {
   background: white;
+  height: 100%;
 }
 #social #message-board .message .content .user, #social #your-network .message .content .user {
   display: flex;
@@ -422,7 +423,7 @@ header .profile-img {
   font-weight: 300;
 }
 #social #message-board .message .content .message-body, #social #your-network .message .content .message-body {
-  margin: 1em;
+  margin: 1em 1em 1em 1em;
   font-size: 14px;
   font-weight: 300;
 }
@@ -473,15 +474,19 @@ header .profile-img {
   font-weight: 300;
 }
 #social #message-board .message .comments-section .comment-input, #social #your-network .message .comments-section .comment-input {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 93%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
   font-size: 13px;
   background: #fff;
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  padding: 5px 0px 5px 8px;
+  padding: 6px 0px 6px 8px;
+  margin: 24px 0px 20px 20px;
+}
+#social #message-board .message .comments-section .comment-input::-webkit-input-placeholder, #social #your-network .message .comments-section .comment-input::-webkit-input-placeholder {
+  color: rgba(108, 108, 111, 0.5);
 }
 #social #your-network {
   margin: 0;
@@ -538,6 +543,8 @@ body {
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
+  margin-left: 230px;
+  margin-right: 365px;
 }
 #main h1 {
   font-size: 27px;

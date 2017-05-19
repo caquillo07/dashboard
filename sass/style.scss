@@ -18,6 +18,10 @@ body {
     background-color: rgb(247, 247, 247);
     display: flex;
     flex-direction: column;
+    // For left-nav to appear open when app loads, other set to 0 or delete
+    margin-left: 230px;
+    // For right-nav to appear open when app loads, other set to 0 or delete
+    margin-right: 365px;
 
     h1 {
         font-size: 27px;
